@@ -1,0 +1,166 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+html {
+  background-color: ghostwhite;
+  font-size: 62.5%;
+}
+html body {
+  color: dimgray;
+  background-color: white;
+  width: 75%;
+  border: 1px solid #5f6527;
+  margin: 3.6rem auto;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 1.4;
+}
+html footer #copyright {
+  border-top: 1px solid #004d25;
+  width: 38.4rem;
+  margin: 1.2rem auto;
+  padding: 1.2rem;
+  font-size: 1.36rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+
+h1 {
+  color: #dbebc4;
+  background-color: #004d25;
+  width: 75%;
+  margin: 2rem auto 2.8rem;
+  padding: 1.2rem;
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+h2 {
+  margin: 2rem 1.2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+em {
+  font-weight: bold;
+}
+em.warning {
+  color: firebrick;
+}
+
+.note {
+  font-size: 1.4rem;
+}
+
+.message {
+  margin: 1.2rem;
+}
+
+ul {
+  line-height: 1.4;
+}
+
+table {
+  margin: 1.2rem auto;
+  border-collapse: separate;
+  border-spacing: 2px;
+}
+table th, table td {
+  padding: 0.8rem 0.4rem;
+  border: 1px solid black;
+}
+table th {
+  color: #dbebc4;
+  background-color: #004d25;
+  font-weight: bold;
+}
+table.list {
+  margin-bottom: 2.8rem;
+}
+table.list th {
+  text-align: center;
+}
+table.list td:first-child, table.list td:nth-child(4) {
+  text-align: right;
+}
+table.list td:nth-child(4) {
+  width: 6.4rem;
+}
+table.form {
+  width: 50%;
+}
+table.form th, table.form td {
+  padding: 0.8rem 1.2rem;
+}
+table.form th {
+  width: 6.4rem;
+  text-align: right;
+}
+table.form td input[type="number"] {
+  width: 8rem;
+  margin-right: 0.2rem;
+}
+table.form td input[type="text"] {
+  width: 39.2rem;
+}
+table.form td textarea {
+  width: 39.2rem;
+}
+table.form td[colspan="2"] {
+  border: 0;
+  padding-top: 2rem;
+  text-align: center;
+}

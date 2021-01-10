@@ -1,0 +1,127 @@
+@charset "utf-8";
+@import "compass/reset";
+
+$font-size: 1.6rem;
+
+@function convScaleToSize($scale) {
+	@return $font-size * $scale;
+}
+
+html {
+	background-color: ghostwhite;
+	font-size: 62.5%;
+	body {
+		color: dimgray;
+		background-color: white;
+		width: 75%;
+		border:1px solid #5f6527;
+		margin: convScaleToSize(2.25) auto;
+		font-size: convScaleToSize(1.0);
+		text-align: center;
+		line-height: 1.4;
+	}
+	footer {
+		#copyright {
+			border-top: 1px solid #004d25;
+			width: convScaleToSize(24);
+			margin: convScaleToSize(0.75) auto;
+			padding: convScaleToSize(0.75);
+			font-size: convScaleToSize(0.85);
+			font-family: 'Times New Roman', Times, serif;
+			font-style: italic;
+		}
+	}
+}
+
+h1 {
+	color: #dbebc4;
+	background-color: #004d25;
+	width: 75%;
+	margin: convScaleToSize(1.25) auto convScaleToSize(1.75);
+	padding: convScaleToSize(0.75);
+	font-size: convScaleToSize(1.75);
+	font-weight: bold;
+}
+
+h2 {
+	margin: convScaleToSize(1.25) convScaleToSize(0.75);
+	font-size: convScaleToSize(1.25);
+	font-weight: bold;
+}
+
+em {
+	font-weight: bold;
+	&.warning {
+		color: firebrick;
+	}
+}
+
+.note {
+	font-size: convScaleToSize(0.875);
+}
+
+.message {
+	margin: convScaleToSize(0.75);
+}
+
+ul {
+	line-height: 1.4;
+}
+
+table {
+	margin: convScaleToSize(0.75) auto;
+	border-collapse: separate;
+	border-spacing: 2px;
+	th, td {
+		padding: convScaleToSize(0.50) convScaleToSize(0.25);
+		border: 1px solid black; 
+	}
+	th {
+		color: #dbebc4;
+		background-color: #004d25; // ボトルグリーン
+		font-weight: bold;
+	}
+	&.list {
+		margin-bottom: convScaleToSize(1.75);
+		th {
+			text-align: center;
+		}
+		td {
+			&:first-child, &:nth-child(4) {
+				text-align: right;
+			}
+			&:nth-child(4) {
+				width: convScaleToSize(4);
+			}
+		}
+	}
+	&.form {
+		width: 50%;
+		th, td {
+			padding: convScaleToSize(0.50) convScaleToSize(0.75); 
+		}
+		th {
+			width: convScaleToSize(4);
+			text-align: right;
+		}
+		td {
+			input {
+				&[type="number"] {
+					width: convScaleToSize(5);
+					margin-right: convScaleToSize(0.125);
+				}
+				&[type="text"] {
+					width: convScaleToSize(24.5);
+				}
+			}
+			textarea {
+				width: convScaleToSize(24.5);
+			}
+			&[colspan="2"] {
+				border: 0;
+				padding-top: convScaleToSize(1.25);
+				text-align: center;
+			}
+		}
+	}
+}
