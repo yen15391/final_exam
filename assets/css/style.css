@@ -154,10 +154,10 @@ table.form td input[type="number"] {
   margin-right: 0.2rem;
 }
 table.form td input[type="text"] {
-  width: 39.2rem;
+  width: 95%;
 }
 table.form td textarea {
-  width: 39.2rem;
+  width: 95%;
 }
 table.form td[colspan="2"] {
   border: 0;
