@@ -111,11 +111,13 @@ table {
 					margin-right: convScaleToSize(0.125);
 				}
 				&[type="text"] {
-					width: convScaleToSize(24.5);
+					width: 95%;
+					// width: convScaleToSize(24.5);
 				}
 			}
 			textarea {
-				width: convScaleToSize(24.5);
+				width: 95%;
+				// width: convScaleToSize(24.5);
 			}
 			&[colspan="2"] {
 				border: 0;
